@@ -1,22 +1,16 @@
 .roboto-font-family{
   font-family: 'Roboto', sans-serif;
 }
-.box-shadow{
-  box-shadow: 0px 3px 6px #00000029;
-}
-.border-12px{
-  border-radius: 12px;
-}
 .fw-medium{
   font-weight: 500;
 }
-.mb-21px{
-  margin-bottom: 21px;
+//
+.addTicket-panel{
+  img{
+    margin-bottom: 21px;
+    object-fit: contain;
+  }
 }
-.object-fit-contain{
-  object-fit: contain;
-}
-
 .ticketCard-region{
   top: -8px;
   padding-right: 20px;
@@ -33,11 +27,14 @@
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #DEE2E6;
 }
-.bg-gray{
+//
+.renderArea{
   padding-top: 44px;
   padding-bottom: 119px;
 }
-
+.regionSearch{
+  border: 1px solid #CED4DA;
+}
 .ticketCard-img{
   a{
     overflow: hidden;//讓圖片不要跑出來
@@ -53,12 +50,18 @@
 }
 .c3-chart-arc{
   text{
-    fill: white;
-    font-size: 12px;
+    // fill: white;
+    // font-size: 12px;
+    display: none;
   }
 }
+//
 @media(min-width:992px){
   .addTicket-panel{
     padding-top: 120px;
+    section{
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 12px;
+    }
   }
 }
