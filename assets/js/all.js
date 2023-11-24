@@ -83,7 +83,7 @@ function makeChartData(data){
         ary.push(item);//ex:高雄
         ary.push(newObj[item]);//ex:1
         newData.push(ary);
-        newData.sort();
+        // newData.sort();
     });
     console.log(newData);//[['高雄', 1],['台北', 1],['台中', 1]] 
     var chart = c3.generate({
