@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*, *::before, *::after {
+    // outline: 1px solid red;
+    box-sizing:border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    transition: all 0.5s;
+    
+}
+body{
+    letter-spacing: 0px;
+    a{
+        display: block;
+        text-decoration: none;
+    }
+    h1,h2,h3,h4,h5,h6,p,ul,li {
+        padding: 0;
+        margin: 0;
+        line-height: 1.375;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
