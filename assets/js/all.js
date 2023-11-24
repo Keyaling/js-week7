@@ -85,7 +85,7 @@ function makeChartData(data){
         newData.push(ary);
         // newData.sort();
     });
-    console.log(newData);//[['高雄', 1],['台北', 1],['台中', 1]] 
+    //console.log(newData);//[['高雄', 1],['台北', 1],['台中', 1]] 
     var chart = c3.generate({
         size: {
             height: 184,
