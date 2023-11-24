@@ -156,27 +156,25 @@ let newArr2=[];//暫存有資料的index
 let content=""
 inputs.forEach(function(item,index){
 if(item.value===""){
-newArr1.push(index);
-newArr1.forEach(function(item){
-dataMessage[item].innerHTML=
-    `
-
-
-            <div style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;">
+    newArr1.push(index);
+    newArr1.forEach(function(item){
+    dataMessage[item].innerHTML=
+        `
+        <div style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;">
             <span class="material-symbols-outlined text-danger align-middle">
-            error
+                error
             </span>
             <span class="text-danger fw-medium">必填!</span>
-            </div>
-    
-`;
-})
-}else if(item.value!==""){
-newArr2.push(index);
-newArr2.forEach(function(item){
-dataMessage[item].innerHTML=content;
-})
-}
+        </div>
+        
+    `;
+    })
+    }else if(item.value!==""){
+        newArr2.push(index);
+        newArr2.forEach(function(item){
+        dataMessage[item].innerHTML=content;
+        })
+    }
 });
 
 if(newArr1.length === 0){
@@ -193,6 +191,8 @@ if(newArr1.length === 0){
     //重新渲染資料
     renderCard(data);
     makeChartData(data);
+    //讓下拉式選單直接呈現全部地區
+    regionSearch.value="";
     //將欄位清空(簡潔的方法)
     const ticketForm = document.querySelector(".addTicket-form");
     ticketForm.reset();
